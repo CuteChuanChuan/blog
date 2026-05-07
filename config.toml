@@ -54,12 +54,11 @@ menu = [
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/raymond", icon = "github" },
-    { name = "linkedin", url = "https://www.linkedin.com/in/raymond/", icon = "linkedin" },
-    { name = "bluesky", url = "https://bsky.app/profile/raymond.bsky.social", icon = "bluesky" },
+    { name = "github", url = "https://github.com/CuteChuanChuan", icon = "github" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/yuchuanhung", icon = "linkedin" },
 ]
 
-feed_icon = true
+feed_icon = false
 
 [extra.giscus]
 enabled_for_all_posts = true

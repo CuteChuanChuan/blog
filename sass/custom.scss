@@ -28,11 +28,11 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     article.h-entry > .toc-container {
         position: fixed;
         top: 5rem;
-        // Anchor TOC ~2rem to the right of the centred article
+        // Anchor TOC ~3rem to the right of the centred article
         // body. Article right edge ≈ (50vw + 404px); TOC width
-        // 14rem (224px); 2rem (32px) gap → right offset 50vw - 660px.
+        // 14rem (224px); 3rem (48px) gap → right offset 50vw - 676px.
         // Bump the constant down to widen the gap, up to tighten it.
-        right: max(2rem, calc(50vw - 660px));
+        right: max(2rem, calc(50vw - 676px));
         z-index: 5;
         margin: 0;
         border-inline-start: 1px solid var(--divider-color);

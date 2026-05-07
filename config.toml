@@ -1,0 +1,77 @@
+# Domain placeholder — replace before deploying to Cloudflare Pages.
+base_url = "https://example.com"
+title = "Raymond's Blog"
+description = "Notes on data engineering, distributed systems, and Rust."
+author = "Raymond"
+default_language = "en"
+theme = "tabi"
+
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+minify_html = true
+
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true },
+]
+
+[markdown]
+smart_punctuation = true
+render_emoji = false
+external_links_target_blank = true
+external_links_no_referrer = true
+bottom_footnotes = true
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
+error_on_missing_language = true
+
+[search]
+include_title = true
+include_description = true
+include_content = true
+index_format = "elasticlunr_json"
+
+[extra]
+default_theme = "dark"
+theme_switcher = true
+katex = true
+mermaid = true
+copy_button = true
+show_reading_time = true
+show_remote_changes = true
+show_remote_source = true
+remote_repository_url = "https://github.com/CuteChuanChuan/blog"
+
+menu = [
+    { name = "posts", url = "posts", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
+    { name = "about", url = "about", trailing_slash = true },
+]
+
+socials = [
+    { name = "github", url = "https://github.com/raymond", icon = "github" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/raymond/", icon = "linkedin" },
+    { name = "bluesky", url = "https://bsky.app/profile/raymond.bsky.social", icon = "bluesky" },
+]
+
+feed_icon = true
+
+# giscus — fill in during Phase 6.
+[extra.giscus]
+enabled_for_all_posts = false
+# repo = "raymond/blog-comments"
+# repo_id = ""
+# category = "Comments"
+# category_id = ""
+# mapping = "pathname"
+# strict_title_matching = 1
+# enable_reactions = 1
+# emit_metadata = 0
+# comment_box_above_comments = false
+# theme = "preferred_color_scheme"
+# lang = "en"
+# lazy_loading = true

@@ -58,6 +58,9 @@ socials = [
     { name = "linkedin", url = "https://www.linkedin.com/in/yuchuanhung", icon = "linkedin" },
 ]
 
+email = "yuchuanhung.raymond@gmail.com"
+encode_plaintext_email = true
+
 feed_icon = false
 
 [extra.giscus]

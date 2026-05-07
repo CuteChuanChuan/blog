@@ -1,10 +1,20 @@
 +++
 title = "About"
-description = "About Raymond."
+description = "About Raymond — data engineer based in Taipei."
 template = "info-page.html"
 +++
 
-I'm Raymond, a data engineer based in Taipei.
+I'm Raymond — Yu-Chuan Hung — a data engineer based in Taipei.
 
-I work mostly on streaming pipelines, lakehouses (Iceberg + Nessie), and Rust.
-This blog is where I write down what I've learned so I can find it again later.
+I currently work at **Garmin Taiwan** on streaming pipelines and
+lakehouses (Apache Iceberg + Nessie), with a growing amount of Rust on
+the side. Outside of work I contribute to a handful of Apache
+open-source projects when I can.
+
+This blog is where I write things down so I can find them again later —
+and so anyone else hitting the same problems can get unstuck a little
+faster.
+
+Find me on [GitHub](https://github.com/CuteChuanChuan),
+[LinkedIn](https://www.linkedin.com/in/yuchuanhung),
+or [by email](mailto:yuchuanhung.raymond@gmail.com).

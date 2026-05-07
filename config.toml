@@ -1,5 +1,5 @@
-# Domain placeholder — replace before deploying to Cloudflare Pages.
-base_url = "https://example.com"
+# Update to the custom domain in Phase 4.
+base_url = "https://blog-aaf.pages.dev"
 title = "Raymond's Blog"
 description = "Notes on data engineering, distributed systems, and Rust."
 author = "Raymond"

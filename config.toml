@@ -59,18 +59,18 @@ socials = [
 
 feed_icon = true
 
-# giscus — fill in during Phase 6.
 [extra.giscus]
-enabled_for_all_posts = false
-# repo = "raymond/blog-comments"
-# repo_id = ""
-# category = "Comments"
-# category_id = ""
-# mapping = "pathname"
-# strict_title_matching = 1
-# enable_reactions = 1
-# emit_metadata = 0
-# comment_box_above_comments = false
-# theme = "preferred_color_scheme"
-# lang = "en"
-# lazy_loading = true
+enabled_for_all_posts = true
+automatic_loading = true
+repo = "CuteChuanChuan/blog"
+repo_id = "R_kgDOSW9wAg"
+category = "Comments"
+category_id = "DIC_kwDOSW9wAs4C8hZL"
+mapping = "pathname"
+strict_title_matching = 1
+enable_reactions = 1
+comment_box_above_comments = false
+light_theme = "noborder_light"
+dark_theme = "noborder_dark"
+lang = ""
+lazy_loading = true

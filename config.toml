@@ -45,6 +45,7 @@ show_remote_changes = true
 show_remote_source = true
 remote_repository_url = "https://github.com/CuteChuanChuan/blog"
 favicon_emoji = "📓"
+stylesheets = ["custom.css"]
 
 menu = [
     { name = "posts", url = "posts", trailing_slash = true },

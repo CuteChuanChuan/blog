@@ -54,6 +54,42 @@ private (drafts, internal screenshots, files with PII or secrets). If
 private storage is needed later, create a separate bucket with public
 access **disabled**.
 
+## Daily workflow
+
+Writing a new post end-to-end:
+
+1. **Draft the post.** Create `content/posts/YYYY-MM-<slug>.md` and copy
+   the frontmatter shape from `2026-05-first-post.md`. Set `date`,
+   `taxonomies.tags`, `description`.
+
+2. **Upload images** (if any) to a path that mirrors the post slug:
+
+   ```bash
+   rclone copy ./screenshot.png r2:blog-assets/posts/YYYY-MM/<slug>/
+   ```
+
+3. **Reference them** with absolute URLs:
+
+   ```markdown
+   ![alt text](https://assets.raymondhung.dev/posts/YYYY-MM/<slug>/screenshot.png)
+   ```
+
+4. **Preview locally:**
+
+   ```bash
+   zola serve   # → http://127.0.0.1:1111
+   ```
+
+5. **Ship it:**
+
+   ```bash
+   git add content/posts/<file>.md
+   git commit -m "post: <title>"
+   git push
+   ```
+
+   Cloudflare Pages rebuilds and deploys to <https://raymondhung.dev> in ~30s.
+
 ## Deploy
 
 Push to `main` → Cloudflare Pages rebuilds and deploys in ~30s.

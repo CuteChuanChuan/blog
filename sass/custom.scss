@@ -28,14 +28,11 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     article.h-entry > .toc-container {
         position: fixed;
         top: 5rem;
-        // Anchor TOC ~4rem to the right of the centred article body
-        // rather than the viewport edge, so it stays close to the
-        // content on wide screens. Math: tabi main = 1000px,
-        // article inset = 6rem, article width ≈ 808px, so the
-        // article's right edge sits at (50vw + 404px). With TOC
-        // width 14rem (224px) and a 4rem (64px) gap, the offset
-        // from the viewport right is 50vw - 692px.
-        right: max(2rem, calc(50vw - 692px));
+        // Anchor TOC ~2rem to the right of the centred article
+        // body. Article right edge ≈ (50vw + 404px); TOC width
+        // 14rem (224px); 2rem (32px) gap → right offset 50vw - 660px.
+        // Bump the constant down to widen the gap, up to tighten it.
+        right: max(2rem, calc(50vw - 660px));
         z-index: 5;
         margin: 0;
         border-inline-start: 1px solid var(--divider-color);

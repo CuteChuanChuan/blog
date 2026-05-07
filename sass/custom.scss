@@ -39,11 +39,20 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
         max-width: none;
     }
 
+    // Default every direct child of article to the left
+    // column. Without this, items after the TOC leak into
+    // column 2 because `grid-row: 1 / -1` only spans the
+    // explicit grid (which has zero rows defined).
+    article.h-entry:has(> .toc-container) > * {
+        grid-column: 1;
+        min-width: 0;
+    }
+
     // The TOC itself: pinned to the right column, sticky to
     // the top of the viewport (just below the sticky header).
     article.h-entry > .toc-container {
         grid-column: 2;
-        grid-row: 1 / -1;
+        grid-row: 1 / span 999;
         align-self: start;
         position: sticky;
         top: 5rem;

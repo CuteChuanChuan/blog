@@ -63,6 +63,15 @@ encode_plaintext_email = true
 
 feed_icon = true
 
+# Site-wide link-preview image (LinkedIn, X, Slack, ...). 1200×630.
+social_media_card = "img/social_card.jpg"
+
+# Previous/next article links at the bottom of posts.
+show_previous_next_article_links = true
+
+# "Go up" / "go to comments" buttons, bottom right (hidden on mobile).
+quick_navigation_buttons = true
+
 [extra.giscus]
 enabled_for_all_posts = true
 automatic_loading = true

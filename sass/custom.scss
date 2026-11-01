@@ -17,6 +17,13 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     scroll-margin-top: 5rem;
 }
 
+/* ── Smaller list-page titles ─────────────────────────── */
+// tabi renders tag / category / archive page titles at 2.2em,
+// which dwarfs the post titles listed beneath them.
+.title-container.section-title {
+    font-size: 1.8em;
+}
+
 /* ── Rounded link-hover area ──────────────────────────── */
 // Tabi paints a solid rectangle behind every link on hover
 // (and a ::before pseudo for the bleed beyond the text box).

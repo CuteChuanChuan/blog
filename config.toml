@@ -61,7 +61,7 @@ socials = [
 email = "yuchuanhung.raymond@gmail.com"
 encode_plaintext_email = true
 
-feed_icon = false
+feed_icon = true
 
 [extra.giscus]
 enabled_for_all_posts = true

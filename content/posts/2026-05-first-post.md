@@ -66,13 +66,13 @@ $$
 
 A typical CDC pipeline:
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
     A[Postgres] -->|Debezium| B[(Kafka)]
     B --> C[Flink]
     C --> D[(Iceberg / Nessie)]
     D --> E[Trino / DuckDB]
-{% end %}
+{% </mermaid> %}
 
 ## What's next
 

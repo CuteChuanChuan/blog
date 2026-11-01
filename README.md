@@ -19,7 +19,8 @@ zola serve
 
 `--recursive` matters — the tabi theme is a git submodule.
 
-Requires Zola ≥ 0.22.1 (`brew install zola`).
+Requires Zola 0.23.x (`brew install zola`); tabi v5+ is incompatible with Zola ≤ 0.22.
+Cloudflare Pages must use the same version (`ZOLA_VERSION=0.23.6`).
 
 ## Writing posts
 

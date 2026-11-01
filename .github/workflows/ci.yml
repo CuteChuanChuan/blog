@@ -27,7 +27,7 @@ jobs:
       - name: Install Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.22.1
+          tool: zola@0.23.6
 
       - name: zola check (skip external links)
         run: zola check --skip-external-links
